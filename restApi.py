@@ -7,7 +7,7 @@ from summarizer import Summarizer
 
 app = Flask(__name__)
 api = Api(app)
-base_url = 'http://localhost:5000/'
+base_url = '3.133.92.223'
 
 
 
@@ -28,7 +28,9 @@ def getStatus(keyword):
             data['status'] = 'not yet'
     except:
         data['error'] = 'not exist!'
-    return json.dumps(data)
+    return jsonify(keyword=data['keyword'],
+                    status=data['status'],
+                    error=data['error'])
 
 @app.route('/video/<string:keyword>',methods=['GET'])
 def getVideo(keyword):
@@ -51,17 +53,21 @@ def post():
         app.mystatus = oldapi.keyToVideo()
         data['get_status'] = base_url + 'status/' + data['keyword']
         data['get_video'] = base_url + 'video/' + data['keyword']
-        return json.dumps(data)
+        return jsonify(keyword=data['keyword'],
+                    get_status=data['get_status'],
+                    get_video=data['get_video'])
     except:
         data['keyword'] = 'breaking'
         Summarizer('breaking', 'breaking',"keys").keyToVideo()
         data['get_status'] = base_url + 'status/' + data['keyword']
         data['get_video'] = base_url + 'video/' + data['keyword']
-        return json.dumps(data)
+        return jsonify(keyword=data['keyword'],
+                    get_status=data['get_status'],
+                    get_video=data['get_video'])
 
         
 
 if __name__ == '__main__':
     app.mykeyword = ""
     app.mystatus = -1
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0',port=8080)

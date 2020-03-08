@@ -3,7 +3,7 @@ https://noracnr.github.io/twitter-summarizer-rest-service-noracnr/
 
   
 
-### Main Exercise(Summerizor.py)
+### Main Exercise(Summarizer.py)
 Using the twitter feed, construct a daily video summarizing a twitter handle day
 * Convert text into an image in a frame 
 * Do a sequence of all texts and images in chronological order.
@@ -24,7 +24,7 @@ To run this program, run summarizer.py for single thread, and run queue_system.p
 python3 summarizer.py
 python3 queue_system.py
 ```
-### Restful Api
+### Restful Api(restApi.py)
 EC2 server: ec2-3-133-92-223.us-east-2.compute.amazonaws.com:8080
 * Open another bash and run:
 ```bash

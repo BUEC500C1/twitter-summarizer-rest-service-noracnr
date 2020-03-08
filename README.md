@@ -40,7 +40,7 @@ curl -X POST -d "keyword=covid19" http://ec2-3-133-92-223.us-east-2.compute.amaz
 ```
 * You can check the status of twitter summarizer like this.
 ```bash
- curl http://ec2-3-133-92-223.us-east-2.compute.amazonaws.com:8080/status/milano
+ curl http://ec2-3-133-92-223.us-east-2.compute.amazonaws.com:8080/status/covid19
 ```
 ```json
 {

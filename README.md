@@ -1,5 +1,5 @@
 # HW5:twitter-summarizer-rest-service-noracnr
-
+https://noracnr.github.io/twitter-summarizer-rest-service-noracnr/
 ### How to use
 EC2 server: ec2-3-133-92-223.us-east-2.compute.amazonaws.com:8080
 1. clone this repository and prepare a series of packages written in requirements.txt.

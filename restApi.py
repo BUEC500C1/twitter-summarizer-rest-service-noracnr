@@ -7,7 +7,7 @@ from summarizer import Summarizer
 
 app = Flask(__name__)
 api = Api(app)
-base_url = '3.133.92.223'
+base_url = '3.133.92.223:8080/'
 
 
 

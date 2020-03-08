@@ -30,5 +30,5 @@ curl -X POST -d "keyword=covid19" http://ec2-3-133-92-223.us-east-2.compute.amaz
   "status": "finished"
 }
 ```
-* Also, watch the video in a browser when you type http://ec2-3-133-92-223.us-east-2.compute.amazonaws.com:8080/video/milano in the address bar. Like that,
-  ![video](/img/restapiVideo.png)
+* Also, watch the video in a browser when you type '3.133.92.223:8080/video/covid19' in the address bar. Like that,
+  ![video](/img/restapiVideo1.png)

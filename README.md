@@ -1,7 +1,7 @@
 # HW5:twitter-summarizer-rest-service-noracnr
 https://noracnr.github.io/twitter-summarizer-rest-service-noracnr/
 
-  
+In demo, Please try keywords except 'Breaking', 'hello','italy','covid-19','covid19'. cause I don't deal with the processed keywords. Thanks.
 
 ### Main Exercise(Summarizer.py)
 Using the twitter feed, construct a daily video summarizing a twitter handle day
